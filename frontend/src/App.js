@@ -3,6 +3,7 @@ import Recipe from "./components/Recipes";
 import RecipesDetails from "./components/Recipedetail";
 import Nav from "./Nav"
 import './App.css';
+import Home from "./Home";
 
 function App() {
     return (
@@ -11,8 +12,9 @@ function App() {
       <Router>
           <div>
               <Routes>
-                  <Route exact path="/" element={<Recipe />} />
-                  <Route  path="/:id" element={ <RecipesDetails/>} />
+                        <Route exact path="/" element={<Home />} />
+                    <Route path="/pies" element={<Recipe />} />
+                  <Route  path="pies/recipe/:id" element={<RecipesDetails/>}/>
               </Routes>
           </div>
             </Router>

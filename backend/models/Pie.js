@@ -37,6 +37,8 @@ const PieSchema = new mongoose.Schema({
                 required: true
             }
     }
+    ],
+    ingredients: [
     ]
     });
 

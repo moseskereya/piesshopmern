@@ -10,7 +10,6 @@ function Recipes() {
         axios.get('http://localhost:8082/api/pies')
             .then((res) => {
                 setRecipe(res.data);
-                console.log(res.data)
             })
         .catch((err) => {
         console.log('Error from ShowBookList');
